@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">FOLKBloreAttendance</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="area_prompt">Please select a location which is nearest to your residence</string>
+
+    <string-array name="area_arrays">
+        <item>	Not Selected </item>
+        <item>	Basavangudi	</item>
+        <item>	Banashankari	</item>
+        <item>	Bellandur	</item>
+        <item>	BTM Layout	</item>
+        <item>	Ecity	</item>
+        <item>	Hesarghatta	</item>
+        <item>	Indira Nagar	</item>
+        <item>	Jayanagar	</item>
+        <item>	JP Nagar	</item>
+        <item>	Kengeri	</item>
+        <item>	Koramangala	</item>
+        <item>	KR Puram	</item>
+        <item>	Marathalli	</item>
+        <item>	Mathikere	</item>
+        <item>	Rajaji Nagar	</item>
+        <item>	Vijayanagar	</item>
+        <item>	Whitefield	</item>
+        <item>	Out of Station	</item>
+
+    </string-array>
+
+</resources>

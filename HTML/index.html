@@ -1,0 +1,1176 @@
+var fireRefG = new Array(17);
+var fireRefP = new Array(17);
+var fireRefW = new Array(17);
+var fireRefY = new Array(17);
+var newCount = new Array(10);
+newCount
+for (var i = 1; i <= 17; i++) {
+  fireRefG[i] = 0;
+  fireRefP[i] = 0;
+  fireRefW[i] = 0;
+  fireRefY[i] = 0;
+}
+
+var HtmlG = document.getElementById("G");; var HtmlP = document.getElementById("P");; var HtmlY = document.getElementById("Y");; var HtmlW = document.getElementById("W"); var HtmlBF = document.getElementById("B15"); var HtmlIF = document.getElementById("I16"); var HtmlIS = document.getElementById("I17"); var HtmlGu = document.getElementById("Gu");
+
+var fireRefBf = new Array(17);
+var fireRefIf = new Array(17);
+var fireRefIs = new Array(17);
+var fireRefGu = new Array(17);
+
+var idG = new Array(17);
+var idP = new Array(17);
+var idW = new Array(17);
+var idY = new Array(17);
+var idT = new Array(17);
+
+
+var Be16 = new Array(17);
+var In16 = new Array(17);
+var In17 = new Array(17);
+var Guest = new Array(17);
+var Y_total = new Array(17);
+var n_Count = new Array(10);
+
+
+var Totalr = new Array(17);
+var Totalyr = new Array(17);
+var total;
+
+
+var to = document.getElementById("to");
+var Yto = document.getElementById("Year_Total");
+var new_count_Total = document.getElementById("total_newcount");
+
+
+ idG[1] = document.getElementById("1G");  idG[2] = document.getElementById("2G");  idG[3] = document.getElementById("3G");  idG[4] = document.getElementById("4G");  idG[5] = document.getElementById("5G");  idG[6] = document.getElementById("6G");  idG[7] = document.getElementById("7G");  idG[8] = document.getElementById("8G");  idG[9] = document.getElementById("9G");  idG[10] = document.getElementById("10G");  idG[11] = document.getElementById("11G");  idG[12] = document.getElementById("12G");  idG[13] = document.getElementById("13G");  idG[14] = document.getElementById("14G");  idG[15] = document.getElementById("15G");  idG[16] = document.getElementById("16G");  idG[17] = document.getElementById("17G");
+
+n_Count[1] = document.getElementById("id_new-Count1");
+n_Count[2] = document.getElementById("id_new-Count2");
+n_Count[3] = document.getElementById("id_new-Count3");
+n_Count[4] = document.getElementById("id_new-Count4");
+n_Count[5] = document.getElementById("id_new-Count5");
+n_Count[6] = document.getElementById("id_new-Count6");
+n_Count[7] = document.getElementById("id_new-Count7");
+n_Count[8] = document.getElementById("id_new-Count8");
+n_Count[9] = document.getElementById("id_new-Count9");
+
+
+
+ idW[1] = document.getElementById("1W");  idW[2] = document.getElementById("2W");  idW[3] = document.getElementById("3W");  idW[4] = document.getElementById("4W");  idW[5] = document.getElementById("5W");  idW[6] = document.getElementById("6W");  idW[7] = document.getElementById("7W");  idW[8] = document.getElementById("8W");  idW[9] = document.getElementById("9W");  idW[10] = document.getElementById("10W");  idW[11] = document.getElementById("11W");  idW[12] = document.getElementById("12W");  idW[13] = document.getElementById("13W");  idW[14] = document.getElementById("14W");  idW[15] = document.getElementById("15W");  idW[16] = document.getElementById("16W");  idW[17] = document.getElementById("17W");
+
+
+ idY[1] = document.getElementById("1Y");  idY[2] = document.getElementById("2Y");  idY[3] = document.getElementById("3Y");  idY[4] = document.getElementById("4Y");  idY[5] = document.getElementById("5Y");  idY[6] = document.getElementById("6Y");  idY[7] = document.getElementById("7Y");  idY[8] = document.getElementById("8Y");  idY[9] = document.getElementById("9Y");  idY[10] = document.getElementById("10Y");  idY[11] = document.getElementById("11Y");  idY[12] = document.getElementById("12Y");  idY[13] = document.getElementById("13Y");  idY[14] = document.getElementById("14Y");  idY[15] = document.getElementById("15Y");  idY[16] = document.getElementById("16Y");  idY[17] = document.getElementById("17Y");
+
+ idP[1] = document.getElementById("1P");  idP[2] = document.getElementById("2P");  idP[3] = document.getElementById("3P");  idP[4] = document.getElementById("4P");  idP[5] = document.getElementById("5P");  idP[6] = document.getElementById("6P");  idP[7] = document.getElementById("7P");  idP[8] = document.getElementById("8P");  idP[9] = document.getElementById("9P");  idP[10] = document.getElementById("10P");  idP[11] = document.getElementById("11P");  idP[12] = document.getElementById("12P");  idP[13] = document.getElementById("13P");  idP[14] = document.getElementById("14P");  idP[15] = document.getElementById("15P");  idP[16] = document.getElementById("16P");  idP[17] = document.getElementById("17P");
+
+ idT[1] = document.getElementById("1T");  idT[2] = document.getElementById("2T");  idT[3] = document.getElementById("3T");  idT[4] = document.getElementById("4T");  idT[5] = document.getElementById("5T");  idT[6] = document.getElementById("6T");  idT[7] = document.getElementById("7T");  idT[8] = document.getElementById("8T");  idT[9] = document.getElementById("9T");  idT[10] = document.getElementById("10T");  idT[11] = document.getElementById("11T");  idT[12] = document.getElementById("12T");  idT[13] = document.getElementById("13T");  idT[14] = document.getElementById("14T");  idT[15] = document.getElementById("15T");  idT[16] = document.getElementById("16T");  idT[17] = document.getElementById("17T");
+
+ Be16[1] = document.getElementById("1Till_2015");
+ Be16[2] = document.getElementById("2Till_2015");
+ Be16[3] = document.getElementById("3Till_2015");
+ Be16[4] = document.getElementById("4Till_2015");
+ Be16[5] = document.getElementById("5Till_2015");
+ Be16[6] = document.getElementById("6Till_2015");
+ Be16[7] = document.getElementById("7Till_2015");
+ Be16[8] = document.getElementById("8Till_2015");
+ Be16[9] = document.getElementById("9Till_2015");
+ Be16[10] = document.getElementById("10Till_2015");
+ Be16[11] = document.getElementById("11Till_2015");
+ Be16[12] = document.getElementById("12Till_2015");
+ Be16[13] = document.getElementById("13Till_2015");
+ Be16[14] = document.getElementById("14Till_2015");
+ Be16[15] = document.getElementById("15Till_2015");
+ Be16[16] = document.getElementById("16Till_2015");
+ Be16[17] = document.getElementById("17Till_2015");
+
+ In16[1] = document.getElementById("1In_2016");
+ In16[2] = document.getElementById("2In_2016");
+ In16[3] = document.getElementById("3In_2016");
+ In16[4] = document.getElementById("4In_2016");
+ In16[5] = document.getElementById("5In_2016");
+ In16[6] = document.getElementById("6In_2016");
+ In16[7] = document.getElementById("7In_2016");
+ In16[8] = document.getElementById("8In_2016");
+ In16[9] = document.getElementById("9In_2016");
+ In16[10] = document.getElementById("10In_2016");
+ In16[11] = document.getElementById("11In_2016");
+ In16[12] = document.getElementById("12In_2016");
+ In16[13] = document.getElementById("13In_2016");
+ In16[14] = document.getElementById("14In_2016");
+ In16[15] = document.getElementById("15In_2016");
+ In16[16] = document.getElementById("16In_2016");
+ In16[17] = document.getElementById("17In_2016");
+
+
+  In17[1] = document.getElementById("1In_2017");
+  In17[2] = document.getElementById("2In_2017");
+  In17[3] = document.getElementById("3In_2017");
+  In17[4] = document.getElementById("4In_2017");
+  In17[5] = document.getElementById("5In_2017");
+  In17[6] = document.getElementById("6In_2017");
+  In17[7] = document.getElementById("7In_2017");
+  In17[8] = document.getElementById("8In_2017");
+  In17[9] = document.getElementById("9In_2017");
+  In17[10] = document.getElementById("10In_2017");
+  In17[11] = document.getElementById("11In_2017");
+  In17[12] = document.getElementById("12In_2017");
+  In17[13] = document.getElementById("13In_2017");
+  In17[14] = document.getElementById("14In_2017");
+  In17[15] = document.getElementById("15In_2017");
+  In17[16] = document.getElementById("16In_2017");
+  In17[17] = document.getElementById("17In_2017");
+
+  Guest[1] = document.getElementById("1Guest");
+  Guest[2] = document.getElementById("2Guest");
+  Guest[3] = document.getElementById("3Guest");
+  Guest[4] = document.getElementById("4Guest");
+  Guest[5] = document.getElementById("5Guest");
+  Guest[6] = document.getElementById("6Guest");
+  Guest[7] = document.getElementById("7Guest");
+  Guest[8] = document.getElementById("8Guest");
+  Guest[9] = document.getElementById("9Guest");
+  Guest[10] = document.getElementById("10Guest");
+  Guest[11] = document.getElementById("11Guest");
+  Guest[12] = document.getElementById("12Guest");
+  Guest[13] = document.getElementById("13Guest");
+  Guest[14] = document.getElementById("14Guest");
+  Guest[15] = document.getElementById("15Guest");
+  Guest[16] = document.getElementById("16Guest");
+  Guest[17] = document.getElementById("17Guest");
+
+  Y_total[1] = document.getElementById("1Year_Total");
+  Y_total[2] = document.getElementById("2Year_Total");
+  Y_total[3] = document.getElementById("3Year_Total");
+  Y_total[4] = document.getElementById("4Year_Total");
+  Y_total[5] = document.getElementById("5Year_Total");
+  Y_total[6] = document.getElementById("6Year_Total");
+  Y_total[7] = document.getElementById("7Year_Total");
+  Y_total[8] = document.getElementById("8Year_Total");
+  Y_total[9] = document.getElementById("9Year_Total");
+  Y_total[10] = document.getElementById("10Year_Total");
+  Y_total[11] = document.getElementById("11Year_Total");
+  Y_total[12] = document.getElementById("12Year_Total");
+  Y_total[13] = document.getElementById("13Year_Total");
+  Y_total[14] = document.getElementById("14Year_Total");
+  Y_total[15] = document.getElementById("15Year_Total");
+  Y_total[16] = document.getElementById("16Year_Total");
+  Y_total[17] = document.getElementById("17Year_Total");
+
+
+  newCount[1] = firebase.database().ref().child("New Database/wsCount/HAPPINESS WS");
+  newCount[2] = firebase.database().ref().child("New Database/wsCount/SELF EMPOWERMENT");
+  newCount[3] = firebase.database().ref().child("New Database/wsCount/DEEP IMPACT");
+  newCount[4] = firebase.database().ref().child("New Database/wsCount/SPECIAL EVENT");
+  newCount[5] = firebase.database().ref().child("New Database/wsCount/ILLUMINIZE");
+  newCount[6] = firebase.database().ref().child("New Database/wsCount/FOLK HANGOUTS");
+  newCount[7] = firebase.database().ref().child("New Database/wsCount/FOLK LABS");
+  newCount[8] = firebase.database().ref().child("New Database/wsCount/MANTRA RETREAT");
+  newCount[9] = firebase.database().ref().child("New Database/wsCount/SERVICE");
+  var counttings = firebase.database().ref().child("Countings");
+
+
+var count = 0;
+
+newCount[9].child("messages").on("value", function(snapshot) {
+  console.log("There are "+snapshot.numChildren()+" messages");
+})
+
+
+
+for (var i = 1; i <= 17; i++) {
+  fireRefG[i] = firebase.database().ref().child("New Database/Time/" + i + "/1"); }
+
+for (var i = 1; i <= 17; i++) {
+  fireRefP[i] = firebase.database().ref().child("New Database/Time/" + i + "/2"); }
+
+for (var i = 1; i <= 17; i++) {
+  fireRefW[i] = firebase.database().ref().child("New Database/Time/" + i + "/4"); }
+
+for (var i = 1; i <= 17; i++) {
+  fireRefY[i] = firebase.database().ref().child("New Database/Time/" + i + "/3"); }
+
+for (var i = 1; i <= 17; i++) {
+  fireRefBf[i] = firebase.database().ref().child("New Database/Year/" + i + "/1"); } for (var i = 1; i <= 17; i++) {
+  fireRefIf[i] = firebase.database().ref().child("New Database/Year/" + i + "/2"); } for (var i = 1; i <= 17; i++) {
+  fireRefIs[i] = firebase.database().ref().child("New Database/Year/" + i + "/3"); } for (var i = 1; i <= 17; i++) {
+  fireRefGu[i] = firebase.database().ref().child("New Database/Year/" + i + "/4"); }
+
+
+
+
+
+// for (var i = 1; i <= 9; i++) {
+//     newCount[i].set(0);
+// }
+
+// for (var i = 1; i <= 17; i++) {
+//   fireRefG[i].set(0);
+// }
+
+// for (var i = 1; i <= 17; i++) {
+//   fireRefW[i].set(0);
+// }
+// for (var i = 1; i <= 17; i++) {
+//   fireRefP[i].set(0);
+// }
+// for (var i = 1; i <= 17; i++) {
+//   fireRefY[i].set(0);
+// }
+
+// for (var i = 1; i <= 17; i++) {
+//   fireRefBf[i].set(0);
+// }
+
+// for (var i = 1; i <= 17; i++) {
+//   fireRefIf[i].set(0);
+// }
+// for (var i = 1; i <= 17; i++) {
+//   fireRefIs[i].set(0);
+// }
+// for (var i = 1; i <= 17; i++) {
+//   fireRefGu[i].set(0);
+// }
+
+// newCount[1].set(0);
+// newCount[2].set(0);
+// newCount[3].set(0);
+// newCount[4].set(0);
+// newCount[5].set(0);
+// newCount[6].set(0);
+// newCount[7].set(0);
+// newCount[8].set(0);
+// newCount[9].set(0);
+
+
+newCount[1].on('value', function(datasnapshot){
+     newCount[1] = datasnapshot.numChildren();
+     console.log(newCount[1]);
+     n_Count[1].innerText = newCount[1];
+     newwww();
+});
+newCount[2].on('value', function(datasnapshot){
+     newCount[2] = datasnapshot.numChildren();
+     n_Count[2].innerText = newCount[2];
+     newwww();
+});
+newCount[3].on('value', function(datasnapshot){
+     newCount[3] = datasnapshot.numChildren();
+     n_Count[3].innerText = newCount[3];
+     newwww();
+});
+newCount[4].on('value', function(datasnapshot){
+     newCount[4] = datasnapshot.numChildren();
+     n_Count[4].innerText = newCount[4];
+     newwww();
+});
+newCount[5].on('value', function(datasnapshot){
+     newCount[5] = datasnapshot.numChildren();
+     n_Count[5].innerText = newCount[5];
+     newwww();
+});
+newCount[6].on('value', function(datasnapshot){
+     newCount[6] = datasnapshot.numChildren();
+     n_Count[6].innerText = newCount[6];
+     newwww();
+});
+newCount[7].on('value', function(datasnapshot){
+     newCount[7] = datasnapshot.numChildren();
+     n_Count[7].innerText = newCount[7];
+     newwww();
+});
+newCount[8].on('value', function(datasnapshot){
+     newCount[8] = datasnapshot.numChildren();
+     n_Count[8].innerText = newCount[8];
+     newwww();
+});
+newCount[9].on('value', function(datasnapshot){
+     newCount[9] = datasnapshot.numChildren();
+     n_Count[9].innerText = newCount[9];
+     newwww();
+});
+
+
+
+
+
+
+fireRefG[1].on('value', function(datasnapshot){
+     fireRefG[1] = datasnapshot.numChildren();
+     idG[1].innerText = fireRefG[1];
+     r1();
+});
+fireRefG[2].on('value', function(datasnapshot){
+     fireRefG[2] = datasnapshot.numChildren();
+     idG[2].innerText = fireRefG[2];
+     r2();
+});
+fireRefG[3].on('value', function(datasnapshot){
+     fireRefG[3] = datasnapshot.numChildren();
+     idG[3].innerText = fireRefG[3];
+     r3();
+});
+fireRefG[4].on('value', function(datasnapshot){
+     fireRefG[4] = datasnapshot.numChildren();
+     idG[4].innerText = fireRefG[4];
+     r4();
+});
+fireRefG[5].on('value', function(datasnapshot){
+     fireRefG[5] = datasnapshot.numChildren();
+     idG[5].innerText = fireRefG[5];
+     r5();
+});
+fireRefG[6].on('value', function(datasnapshot){
+     fireRefG[6] = datasnapshot.numChildren();
+     idG[6].innerText = fireRefG[6];
+     r6();
+});
+fireRefG[7].on('value', function(datasnapshot){
+     fireRefG[7] = datasnapshot.numChildren();
+     idG[7].innerText = fireRefG[7];
+     r7();
+});
+fireRefG[8].on('value', function(datasnapshot){
+     fireRefG[8] = datasnapshot.numChildren();
+     idG[8].innerText = fireRefG[8];
+     r8();
+});
+fireRefG[9].on('value', function(datasnapshot){
+     fireRefG[9] = datasnapshot.numChildren();
+     idG[9].innerText = fireRefG[9];
+     r9();
+});
+fireRefG[10].on('value', function(datasnapshot){
+     fireRefG[10] = datasnapshot.numChildren();
+     idG[10].innerText = fireRefG[10];
+     r10();
+});
+fireRefG[11].on('value', function(datasnapshot){
+     fireRefG[11] = datasnapshot.numChildren();
+     idG[11].innerText = fireRefG[11];
+     r11();
+});
+fireRefG[12].on('value', function(datasnapshot){
+     fireRefG[12] = datasnapshot.numChildren();
+     idG[12].innerText = fireRefG[12];
+     r12();
+});
+fireRefG[13].on('value', function(datasnapshot){
+     fireRefG[13] = datasnapshot.numChildren();
+     idG[13].innerText = fireRefG[13];
+     r13();
+});
+fireRefG[14].on('value', function(datasnapshot){
+     fireRefG[14] = datasnapshot.numChildren();
+     idG[14].innerText = fireRefG[14];
+     r14();
+});
+fireRefG[15].on('value', function(datasnapshot){
+     fireRefG[15] = datasnapshot.numChildren();
+     idG[15].innerText = fireRefG[15];
+     r15();
+});
+fireRefG[16].on('value', function(datasnapshot){
+     fireRefG[16] = datasnapshot.numChildren();
+     idG[16].innerText = fireRefG[16];
+     r16();
+});
+fireRefG[17].on('value', function(datasnapshot){
+     fireRefG[17] = datasnapshot.numChildren();
+     idG[17].innerText = fireRefG[17];
+     r17();
+});
+
+fireRefY[1].on('value', function(datasnapshot){
+     fireRefY[1] = datasnapshot.numChildren();
+     idY[1].innerText = fireRefY[1];
+     r1();
+});
+fireRefY[2].on('value', function(datasnapshot){
+     fireRefY[2] = datasnapshot.numChildren();
+     idY[2].innerText = fireRefY[2];
+     r2();
+});
+fireRefY[3].on('value', function(datasnapshot){
+     fireRefY[3] = datasnapshot.numChildren();
+     idY[3].innerText = fireRefY[3];
+     r3();
+});
+fireRefY[4].on('value', function(datasnapshot){
+     fireRefY[4] = datasnapshot.numChildren();
+     idY[4].innerText = fireRefY[4];
+     r4();
+});
+fireRefY[5].on('value', function(datasnapshot){
+     fireRefY[5] = datasnapshot.numChildren();
+     idY[5].innerText = fireRefY[5];
+     r5();
+});
+fireRefY[6].on('value', function(datasnapshot){
+     fireRefY[6] = datasnapshot.numChildren();
+     idY[6].innerText = fireRefY[6];
+     r6();
+});
+fireRefY[7].on('value', function(datasnapshot){
+     fireRefY[7] = datasnapshot.numChildren();
+     idY[7].innerText = fireRefY[7];
+     r7();
+});
+fireRefY[8].on('value', function(datasnapshot){
+     fireRefY[8] = datasnapshot.numChildren();
+     idY[8].innerText = fireRefY[8];
+     r8();
+});
+fireRefY[9].on('value', function(datasnapshot){
+     fireRefY[9] = datasnapshot.numChildren();
+     idY[9].innerText = fireRefY[9];
+     r9();
+});
+fireRefY[10].on('value', function(datasnapshot){
+     fireRefY[10] = datasnapshot.numChildren();
+     idY[10].innerText = fireRefY[10];
+     r10();
+});
+fireRefY[11].on('value', function(datasnapshot){
+     fireRefY[11] = datasnapshot.numChildren();
+     idY[11].innerText = fireRefY[11];
+     r11();
+});
+fireRefY[12].on('value', function(datasnapshot){
+     fireRefY[12] = datasnapshot.numChildren();
+     idY[12].innerText = fireRefY[12];
+     r12();
+});
+fireRefY[13].on('value', function(datasnapshot){
+     fireRefY[13] = datasnapshot.numChildren();
+     idY[13].innerText = fireRefY[13];
+     r13();
+});
+fireRefY[14].on('value', function(datasnapshot){
+     fireRefY[14] = datasnapshot.numChildren();
+     idY[14].innerText = fireRefY[14];
+     r14();
+});
+fireRefY[15].on('value', function(datasnapshot){
+     fireRefY[15] = datasnapshot.numChildren();
+     idY[15].innerText = fireRefY[15];
+     r15();
+});
+
+fireRefY[16].on('value', function(datasnapshot){
+     fireRefY[16] = datasnapshot.numChildren();
+     idY[16].innerText = fireRefY[16];
+     r16();
+});
+
+fireRefY[17].on('value', function(datasnapshot){
+     fireRefY[17] = datasnapshot.numChildren();
+     idY[17].innerText = fireRefY[17];
+     r17();
+});
+
+
+
+fireRefW[1].on('value', function(datasnapshot){
+     fireRefW[1] = datasnapshot.numChildren();
+     idW[1].innerText = fireRefW[1];
+     r1();
+});
+fireRefW[2].on('value', function(datasnapshot){
+     fireRefW[2] = datasnapshot.numChildren();
+     idW[2].innerText = fireRefW[2];
+     r2();
+});
+fireRefW[3].on('value', function(datasnapshot){
+     fireRefW[3] = datasnapshot.numChildren();
+     idW[3].innerText = fireRefW[3];
+     r3();
+});
+fireRefW[4].on('value', function(datasnapshot){
+     fireRefW[4] = datasnapshot.numChildren();
+     idW[4].innerText = fireRefW[4];
+     r4();
+});
+fireRefW[5].on('value', function(datasnapshot){
+     fireRefW[5] = datasnapshot.numChildren();
+     idW[5].innerText = fireRefW[5];
+     r5();
+});
+fireRefW[6].on('value', function(datasnapshot){
+     fireRefW[6] = datasnapshot.numChildren();
+     idW[6].innerText = fireRefW[6];
+     r6();
+});
+fireRefW[7].on('value', function(datasnapshot){
+     fireRefW[7] = datasnapshot.numChildren();
+     idW[7].innerText = fireRefW[7];
+     r7();
+});
+fireRefW[8].on('value', function(datasnapshot){
+     fireRefW[8] = datasnapshot.numChildren();
+     idW[8].innerText = fireRefW[8];
+     r8();
+});
+fireRefW[9].on('value', function(datasnapshot){
+     fireRefW[9] = datasnapshot.numChildren();
+     idW[9].innerText = fireRefW[9];
+     r9();
+});
+fireRefW[10].on('value', function(datasnapshot){
+     fireRefW[10] = datasnapshot.numChildren();
+     idW[10].innerText = fireRefW[10];
+     r10();
+});
+fireRefW[11].on('value', function(datasnapshot){
+     fireRefW[11] = datasnapshot.numChildren();
+     idW[11].innerText = fireRefW[11];
+     r11();
+});
+fireRefW[12].on('value', function(datasnapshot){
+     fireRefW[12] = datasnapshot.numChildren();
+     idW[12].innerText = fireRefW[12];
+     r12();
+});
+fireRefW[13].on('value', function(datasnapshot){
+     fireRefW[13] = datasnapshot.numChildren();
+     idW[13].innerText = fireRefW[13];
+     r13();
+});
+fireRefW[14].on('value', function(datasnapshot){
+     fireRefW[14] = datasnapshot.numChildren();
+     idW[14].innerText = fireRefW[14];
+     r14();
+});
+fireRefW[15].on('value', function(datasnapshot){
+     fireRefW[15] = datasnapshot.numChildren();
+     idW[15].innerText = fireRefW[15];
+     r15();
+});
+fireRefW[16].on('value', function(datasnapshot){
+     fireRefW[16] = datasnapshot.numChildren();
+     idW[16].innerText = fireRefW[16];
+     r16();
+});
+fireRefW[17].on('value', function(datasnapshot){
+     fireRefW[17] = datasnapshot.numChildren();
+     idW[17].innerText = fireRefW[17];
+     r17();
+});
+
+
+
+fireRefP[1].on('value', function(datasnapshot){
+     fireRefP[1] = datasnapshot.numChildren();
+     idP[1].innerText = fireRefP[1];
+     r1();
+});
+fireRefP[2].on('value', function(datasnapshot){
+     fireRefP[2] = datasnapshot.numChildren();
+     idP[2].innerText = fireRefP[2];
+     r2();
+});
+fireRefP[3].on('value', function(datasnapshot){
+     fireRefP[3] = datasnapshot.numChildren();
+     idP[3].innerText = fireRefP[3];
+     r3();
+});
+fireRefP[4].on('value', function(datasnapshot){
+     fireRefP[4] = datasnapshot.numChildren();
+     idP[4].innerText = fireRefP[4];
+     r4();
+});
+fireRefP[5].on('value', function(datasnapshot){
+     fireRefP[5] = datasnapshot.numChildren();
+     idP[5].innerText = fireRefP[5];
+     r5();
+});
+fireRefP[6].on('value', function(datasnapshot){
+     fireRefP[6] = datasnapshot.numChildren();
+     idP[6].innerText = fireRefP[6];
+     r6();
+});
+fireRefP[7].on('value', function(datasnapshot){
+     fireRefP[7] = datasnapshot.numChildren();
+     idP[7].innerText = fireRefP[7];
+     r7();
+});
+fireRefP[8].on('value', function(datasnapshot){
+     fireRefP[8] = datasnapshot.numChildren();
+     idP[8].innerText = fireRefP[8];
+     r8();
+});
+fireRefP[9].on('value', function(datasnapshot){
+     fireRefP[9] = datasnapshot.numChildren();
+     idP[9].innerText = fireRefP[9];
+     r9();
+});
+fireRefP[10].on('value', function(datasnapshot){
+     fireRefP[10] = datasnapshot.numChildren();
+     idP[10].innerText = fireRefP[10];
+     r10();
+});
+fireRefP[11].on('value', function(datasnapshot){
+     fireRefP[11] = datasnapshot.numChildren();
+     idP[11].innerText = fireRefP[11];
+     r11();
+});
+fireRefP[12].on('value', function(datasnapshot){
+     fireRefP[12] = datasnapshot.numChildren();
+     idP[12].innerText = fireRefP[12];
+     r12();
+});
+fireRefP[13].on('value', function(datasnapshot){
+     fireRefP[13] = datasnapshot.numChildren();
+     idP[13].innerText = fireRefP[13];
+     r13();
+});
+fireRefP[14].on('value', function(datasnapshot){
+     fireRefP[14] = datasnapshot.numChildren();
+     idP[14].innerText = fireRefP[14];
+     r14();
+});
+fireRefP[15].on('value', function(datasnapshot){
+     fireRefP[15] = datasnapshot.numChildren();
+     idP[15].innerText = fireRefP[15];
+     r15();
+});
+fireRefP[16].on('value', function(datasnapshot){
+     fireRefP[16] = datasnapshot.numChildren();
+     idP[16].innerText = fireRefP[16];
+     r16();
+});
+fireRefP[17].on('value', function(datasnapshot){
+     fireRefP[17] = datasnapshot.numChildren();
+     idP[17].innerText = fireRefP[17];
+     r17();
+});
+
+
+
+fireRefBf[1].on('value', function(datasnapshot){
+     fireRefBf[1] = datasnapshot.numChildren();
+     Be16[1].innerText = fireRefBf[1];
+     yr1();
+});
+fireRefBf[2].on('value', function(datasnapshot){
+     fireRefBf[2] = datasnapshot.numChildren();
+     Be16[2].innerText = fireRefBf[2];
+     yr2();
+});
+fireRefBf[3].on('value', function(datasnapshot){
+     fireRefBf[3] = datasnapshot.numChildren();
+     Be16[3].innerText = fireRefBf[3];
+     yr3();
+});
+fireRefBf[4].on('value', function(datasnapshot){
+     fireRefBf[4] = datasnapshot.numChildren();
+     Be16[4].innerText = fireRefBf[4];
+     yr4();
+});
+fireRefBf[5].on('value', function(datasnapshot){
+     fireRefBf[5] = datasnapshot.numChildren();
+     Be16[5].innerText = fireRefBf[5];
+     yr5();
+});
+fireRefBf[6].on('value', function(datasnapshot){
+     fireRefBf[6] = datasnapshot.numChildren();
+     Be16[6].innerText = fireRefBf[6];
+     yr6();
+});
+fireRefBf[7].on('value', function(datasnapshot){
+     fireRefBf[7] = datasnapshot.numChildren();
+     Be16[7].innerText = fireRefBf[7];
+     yr7();
+});
+fireRefBf[8].on('value', function(datasnapshot){
+     fireRefBf[8] = datasnapshot.numChildren();
+     Be16[8].innerText = fireRefBf[8];
+     yr8();
+});
+fireRefBf[9].on('value', function(datasnapshot){
+     fireRefBf[9] = datasnapshot.numChildren();
+     Be16[9].innerText = fireRefBf[9];
+     yr9();
+});
+fireRefBf[10].on('value', function(datasnapshot){
+     fireRefBf[10] = datasnapshot.numChildren();
+     Be16[10].innerText = fireRefBf[10];
+     yr10();
+});
+fireRefBf[11].on('value', function(datasnapshot){
+     fireRefBf[11] = datasnapshot.numChildren();
+     Be16[11].innerText = fireRefBf[11];
+     yr11();
+});
+fireRefBf[12].on('value', function(datasnapshot){
+     fireRefBf[12] = datasnapshot.numChildren();
+     Be16[12].innerText = fireRefBf[12];
+     yr12();
+});
+fireRefBf[13].on('value', function(datasnapshot){
+     fireRefBf[13] = datasnapshot.numChildren();
+     Be16[13].innerText = fireRefBf[13];
+     yr13();
+});
+fireRefBf[14].on('value', function(datasnapshot){
+     fireRefBf[14] = datasnapshot.numChildren();
+     Be16[14].innerText = fireRefBf[14];
+     yr14();
+});
+fireRefBf[15].on('value', function(datasnapshot){
+     fireRefBf[15] = datasnapshot.numChildren();
+     Be16[15].innerText = fireRefBf[15];
+     yr15();
+});
+fireRefBf[16].on('value', function(datasnapshot){
+     fireRefBf[16] = datasnapshot.numChildren();
+     Be16[16].innerText = fireRefBf[16];
+     yr16();
+});
+fireRefBf[17].on('value', function(datasnapshot){
+     fireRefBf[17] = datasnapshot.numChildren();
+     Be16[17].innerText = fireRefBf[17];
+     yr17();
+});
+
+fireRefIf[1].on('value', function(datasnapshot){
+     fireRefIf[1] = datasnapshot.numChildren();
+     In16[1].innerText = fireRefIf[1];
+     yr1();
+});
+fireRefIf[2].on('value', function(datasnapshot){
+     fireRefIf[2] = datasnapshot.numChildren();
+     In16[2].innerText = fireRefIf[2];
+     yr2();
+});
+fireRefIf[3].on('value', function(datasnapshot){
+     fireRefIf[3] = datasnapshot.numChildren();
+     In16[3].innerText = fireRefIf[3];
+     yr3();
+});
+fireRefIf[4].on('value', function(datasnapshot){
+     fireRefIf[4] = datasnapshot.numChildren();
+     In16[4].innerText = fireRefIf[4];
+     yr4();
+});
+fireRefIf[5].on('value', function(datasnapshot){
+     fireRefIf[5] = datasnapshot.numChildren();
+     In16[5].innerText = fireRefIf[5];
+     yr5();
+});
+fireRefIf[6].on('value', function(datasnapshot){
+     fireRefIf[6] = datasnapshot.numChildren();
+     In16[6].innerText = fireRefIf[6];
+     yr6();
+});
+fireRefIf[7].on('value', function(datasnapshot){
+     fireRefIf[7] = datasnapshot.numChildren();
+     In16[7].innerText = fireRefIf[7];
+     yr7();
+});
+fireRefIf[8].on('value', function(datasnapshot){
+     fireRefIf[8] = datasnapshot.numChildren();
+     In16[8].innerText = fireRefIf[8];
+     yr8();
+});
+fireRefIf[9].on('value', function(datasnapshot){
+     fireRefIf[9] = datasnapshot.numChildren();
+     In16[9].innerText = fireRefIf[9];
+     yr9();
+});
+fireRefIf[10].on('value', function(datasnapshot){
+     fireRefIf[10] = datasnapshot.numChildren();
+     In16[10].innerText = fireRefIf[10];
+     yr10();
+});
+fireRefIf[11].on('value', function(datasnapshot){
+     fireRefIf[11] = datasnapshot.numChildren();
+     In16[11].innerText = fireRefIf[11];
+     yr11();
+});
+fireRefIf[12].on('value', function(datasnapshot){
+     fireRefIf[12] = datasnapshot.numChildren();
+     In16[12].innerText = fireRefIf[12];
+     yr12();
+});
+fireRefIf[13].on('value', function(datasnapshot){
+     fireRefIf[13] = datasnapshot.numChildren();
+     In16[13].innerText = fireRefIf[13];
+     yr13();
+});
+fireRefIf[14].on('value', function(datasnapshot){
+     fireRefIf[14] = datasnapshot.numChildren();
+     In16[14].innerText = fireRefIf[14];
+     yr14();
+});
+fireRefIf[15].on('value', function(datasnapshot){
+     fireRefIf[15] = datasnapshot.numChildren();
+     In16[15].innerText = fireRefIf[15];
+     yr15();
+});
+fireRefIf[16].on('value', function(datasnapshot){
+     fireRefIf[16] = datasnapshot.numChildren();
+     In16[16].innerText = fireRefIf[16];
+     yr16();
+});
+fireRefIf[17].on('value', function(datasnapshot){
+     fireRefIf[17] = datasnapshot.numChildren();
+     In16[17].innerText = fireRefIf[17];
+     yr17();
+});
+fireRefIs[1].on('value', function(datasnapshot){
+     fireRefIs[1] = datasnapshot.numChildren();
+     In17[1].innerText = fireRefIs[1];
+     yr1();
+});
+fireRefIs[2].on('value', function(datasnapshot){
+     fireRefIs[2] = datasnapshot.numChildren();
+     In17[2].innerText = fireRefIs[2];
+     yr2();
+});
+fireRefIs[3].on('value', function(datasnapshot){
+     fireRefIs[3] = datasnapshot.numChildren();
+     In17[3].innerText = fireRefIs[3];
+     yr3();
+});
+fireRefIs[4].on('value', function(datasnapshot){
+     fireRefIs[4] = datasnapshot.numChildren();
+     In17[4].innerText = fireRefIs[4];
+     yr4();
+});
+fireRefIs[5].on('value', function(datasnapshot){
+     fireRefIs[5] = datasnapshot.numChildren();
+     In17[5].innerText = fireRefIs[5];
+     yr5();
+});
+fireRefIs[6].on('value', function(datasnapshot){
+     fireRefIs[6] = datasnapshot.numChildren();
+     In17[6].innerText = fireRefIs[6];
+     yr6();
+});
+fireRefIs[7].on('value', function(datasnapshot){
+     fireRefIs[7] = datasnapshot.numChildren();
+     In17[7].innerText = fireRefIs[7];
+     yr7();
+});
+fireRefIs[8].on('value', function(datasnapshot){
+     fireRefIs[8] = datasnapshot.numChildren();
+     In17[8].innerText = fireRefIs[8];
+     yr8();
+});
+fireRefIs[9].on('value', function(datasnapshot){
+     fireRefIs[9] = datasnapshot.numChildren();
+     In17[9].innerText = fireRefIs[9];
+     yr9();
+});
+fireRefIs[10].on('value', function(datasnapshot){
+     fireRefIs[10] = datasnapshot.numChildren();
+     In17[10].innerText = fireRefIs[10];
+     yr10();
+});
+fireRefIs[11].on('value', function(datasnapshot){
+     fireRefIs[11] = datasnapshot.numChildren();
+     In17[11].innerText = fireRefIs[11];
+     yr11();
+});
+fireRefIs[12].on('value', function(datasnapshot){
+     fireRefIs[12] = datasnapshot.numChildren();
+     In17[12].innerText = fireRefIs[12];
+     yr12();
+});
+fireRefIs[13].on('value', function(datasnapshot){
+     fireRefIs[13] = datasnapshot.numChildren();
+     In17[13].innerText = fireRefIs[13];
+     yr13();
+});
+fireRefIs[14].on('value', function(datasnapshot){
+     fireRefIs[14] = datasnapshot.numChildren();
+     In17[14].innerText = fireRefIs[14];
+     yr14();
+});
+fireRefIs[15].on('value', function(datasnapshot){
+     fireRefIs[15] = datasnapshot.numChildren();
+     In17[15].innerText = fireRefIs[15];
+     yr15();
+});
+fireRefIs[16].on('value', function(datasnapshot){
+     fireRefIs[16] = datasnapshot.numChildren();
+     In17[16].innerText = fireRefIs[16];
+     yr16();
+});
+fireRefIs[17].on('value', function(datasnapshot){
+     fireRefIs[17] = datasnapshot.numChildren();
+     In17[17].innerText = fireRefIs[17];
+     yr17();
+});
+fireRefGu[1].on('value', function(datasnapshot){
+     fireRefGu[1] = datasnapshot.numChildren();
+     Guest[1].innerText = fireRefGu[1];
+     yr1();
+});
+fireRefGu[2].on('value', function(datasnapshot){
+     fireRefGu[2] = datasnapshot.numChildren();
+     Guest[2].innerText = fireRefGu[2];
+     yr2();
+});
+fireRefGu[3].on('value', function(datasnapshot){
+     fireRefGu[3] = datasnapshot.numChildren();
+     Guest[3].innerText = fireRefGu[3];
+     yr3();
+});
+fireRefGu[4].on('value', function(datasnapshot){
+     fireRefGu[4] = datasnapshot.numChildren();
+     Guest[4].innerText = fireRefGu[4];
+     yr4();
+});
+fireRefGu[5].on('value', function(datasnapshot){
+     fireRefGu[5] = datasnapshot.numChildren();
+     Guest[5].innerText = fireRefGu[5];
+     yr5();
+});
+fireRefGu[6].on('value', function(datasnapshot){
+     fireRefGu[6] = datasnapshot.numChildren();
+     Guest[6].innerText = fireRefGu[6];
+     yr6();
+});
+fireRefGu[7].on('value', function(datasnapshot){
+     fireRefGu[7] = datasnapshot.numChildren();
+     Guest[7].innerText = fireRefGu[7];
+     yr7();
+});
+fireRefGu[8].on('value', function(datasnapshot){
+     fireRefGu[8] = datasnapshot.numChildren();
+     Guest[8].innerText = fireRefGu[8];
+     yr8();
+});
+fireRefGu[9].on('value', function(datasnapshot){
+     fireRefGu[9] = datasnapshot.numChildren();
+     Guest[9].innerText = fireRefGu[9];
+     yr9();
+});
+fireRefGu[10].on('value', function(datasnapshot){
+     fireRefGu[10] = datasnapshot.numChildren();
+     Guest[10].innerText = fireRefGu[10];
+     yr10();
+});
+fireRefGu[11].on('value', function(datasnapshot){
+     fireRefGu[11] = datasnapshot.numChildren();
+     Guest[11].innerText = fireRefGu[11];
+     yr11();
+});
+fireRefGu[12].on('value', function(datasnapshot){
+     fireRefGu[12] = datasnapshot.numChildren();
+     Guest[12].innerText = fireRefGu[12];
+     yr12();
+});
+fireRefGu[13].on('value', function(datasnapshot){
+     fireRefGu[13] = datasnapshot.numChildren();
+     Guest[13].innerText = fireRefGu[13];
+     yr13();
+});
+fireRefGu[14].on('value', function(datasnapshot){
+     fireRefGu[14] = datasnapshot.numChildren();
+     Guest[14].innerText = fireRefGu[14];
+     yr14();
+});
+fireRefGu[15].on('value', function(datasnapshot){
+     fireRefGu[15] = datasnapshot.numChildren();
+     Guest[15].innerText = fireRefGu[15];
+     yr15();
+});
+fireRefGu[17].on('value', function(datasnapshot){
+     fireRefGu[17] = datasnapshot.numChildren();
+     Guest[17].innerText = fireRefGu[17];
+     yr17();
+});
+fireRefGu[16].on('value', function(datasnapshot){
+     fireRefGu[16] = datasnapshot.numChildren();
+     Guest[16].innerText = fireRefGu[16];
+     yr16();
+     console.log('hi');
+     console.log(Totalr[1]);
+     console.log("hello");
+
+});
+
+
+
+// counttings.on('value', function(datasnapshot){
+//      newCount[1] = datasnapshot.numChildren();
+//      console.log(" This is the count of children "+datasnapshot.numChildren());
+//
+// });
+
+
+
+
+function newwww(){
+  var totalNewCount = newCount[1] + newCount[2] +newCount[3] +newCount[4] +newCount[5] +newCount[6] +newCount[7] +newCount[9] +newCount[8];
+  console.log(newCount[1] + " , " + newCount[2] + " , " + newCount[3] + " , " + newCount[4] + " , " + newCount[5] + " , " + newCount[6] + " , " + newCount[7] + " , " + newCount[8]); console.log(totalNewCount);
+
+  new_count_Total.innerText = totalNewCount; }
+
+
+
+
+function r1(){
+  Totalr[1] = fireRefP[1] + fireRefW[1] + fireRefY[1] + fireRefG[1];
+  idT[1].innerText = Totalr[1];
+  totalll();
+}
+newCount
+function r2(){
+  Totalr[2] = fireRefP[2] + fireRefW[2] + fireRefY[2] + fireRefG[2];
+  idT[2].innerText = Totalr[2];
+  totalll();
+}
+
+function r3(){
+  Totalr[3] = fireRefP[3] + fireRefW[3] + fireRefY[3] + fireRefG[3];
+  idT[3].innerText = Totalr[3];
+  totalll();
+}
+
+function r4(){
+  Totalr[4] = fireRefP[4] + fireRefW[4] + fireRefY[4] + fireRefG[4];
+  idT[4].innerText = Totalr[4];
+  totalll();
+}
+
+function r5(){
+  Totalr[5] = fireRefP[5] + fireRefW[5] + fireRefY[5] + fireRefG[5];
+  idT[5].innerText = Totalr[5];totalll(); } function r6(){
+  Totalr[6] = fireRefP[6] + fireRefW[6] + fireRefY[6] + fireRefG[6];
+  idT[6].innerText = Totalr[6];totalll(); } function r7(){
+  Totalr[7] = fireRefP[7] + fireRefW[7] + fireRefY[7] + fireRefG[7];
+  idT[7].innerText = Totalr[7];totalll(); } function r8(){
+  Totalr[8] = fireRefP[8] + fireRefW[8] + fireRefY[8] + fireRefG[8];
+  idT[8].innerText = Totalr[8];totalll(); } function r9(){
+  Totalr[9] = fireRefP[9] + fireRefW[9] + fireRefY[9] + fireRefG[9];
+  idT[9].innerText = Totalr[9];totalll(); } function r10(){
+  Totalr[10] = fireRefP[10] + fireRefW[10] + fireRefY[10] + fireRefG[10];
+  idT[10].innerText = Totalr[10];totalll(); } function r11(){
+  Totalr[11] = fireRefP[11] + fireRefW[11] + fireRefY[11] + fireRefG[11];
+  idT[11].innerText = Totalr[11];totalll(); } function r12(){
+  Totalr[12] = fireRefP[12] + fireRefW[12] + fireRefY[12] + fireRefG[12];
+  idT[12].innerText = Totalr[12];totalll(); } function r13(){
+  Totalr[13] = fireRefP[13] + fireRefW[13] + fireRefY[13] + fireRefG[13];
+  idT[13].innerText = Totalr[13];totalll(); } function r14(){
+  Totalr[14] = fireRefP[14] + fireRefW[14] + fireRefY[14] + fireRefG[14];
+  idT[14].innerText = Totalr[14];totalll(); } function r15(){
+  Totalr[15] = fireRefP[15] + fireRefW[15] + fireRefY[15] + fireRefG[15];
+  idT[15].innerText = Totalr[15];totalll(); }
+
+function r16(){
+  Totalr[16] = fireRefP[16] + fireRefW[16] + fireRefY[16] + fireRefG[16];
+  idT[16].innerText = Totalr[16];totalll(); } function r17(){
+  Totalr[17] = fireRefP[17] + fireRefW[17] + fireRefY[17] + fireRefG[17];
+  idT[17].innerText = Totalr[17];totalll(); }
+
+
+
+
+function yr1(){
+  Totalyr[1] = fireRefBf[1] + fireRefIf[1] + fireRefIs[1] + fireRefGu[1];
+  Y_total[1].innerText = Totalyr[1];
+  tot_year();
+}
+
+function yr2(){
+  Totalyr[2] = fireRefBf[2] + fireRefIf[2] + fireRefIs[2] + fireRefGu[2];
+  Y_total[2].innerText = Totalyr[2];
+  tot_year();
+}
+
+function yr3(){
+  Totalyr[3] = fireRefBf[3] + fireRefIf[3] + fireRefIs[3] + fireRefGu[3];
+  Y_total[3].innerText = Totalyr[3];tot_year(); }
+
+function yr4(){
+  Totalyr[4] = fireRefBf[4] + fireRefIf[4] + fireRefIs[4] + fireRefGu[4];
+  Y_total[4].innerText = Totalyr[4];tot_year(); }
+
+function yr5(){
+  Totalyr[5] = fireRefBf[5] + fireRefIf[5] + fireRefIs[5] + fireRefGu[5];
+  Y_total[5].innerText = Totalyr[5];tot_year(); } function yr6(){
+  Totalyr[6] = fireRefBf[6] + fireRefIf[6] + fireRefIs[6] + fireRefGu[6];
+  Y_total[6].innerText = Totalyr[6];tot_year(); } function yr7(){
+  Totalyr[7] = fireRefBf[7] + fireRefIf[7] + fireRefIs[7] + fireRefGu[7];
+  Y_total[7].innerText = Totalyr[7];tot_year(); } function yr8(){
+  Totalyr[8] = fireRefBf[8] + fireRefIf[8] + fireRefIs[8] + fireRefGu[8];
+  Y_total[8].innerText = Totalyr[8];tot_year(); } function yr9(){
+  Totalyr[9] = fireRefBf[9] + fireRefIf[9] + fireRefIs[9] + fireRefGu[9];
+  Y_total[9].innerText = Totalyr[9];tot_year(); } function yr10(){
+  Totalyr[10] = fireRefBf[10] + fireRefIf[10] + fireRefIs[10] + fireRefGu[10];
+  Y_total[10].innerText = Totalyr[10];tot_year(); } function yr11(){
+  Totalyr[11] = fireRefBf[11] + fireRefIf[11] + fireRefIs[11] + fireRefGu[11];
+  Y_total[11].innerText = Totalyr[11];tot_year(); } function yr12(){
+  Totalyr[12] = fireRefBf[12] + fireRefIf[12] + fireRefIs[12] + fireRefGu[12];
+  Y_total[12].innerText = Totalyr[12];tot_year(); } function yr13(){
+  Totalyr[13] = fireRefBf[13] + fireRefIf[13] + fireRefIs[13] + fireRefGu[13];
+  Y_total[13].innerText = Totalyr[13];tot_year(); } function yr14(){
+  Totalyr[14] = fireRefBf[14] + fireRefIf[14] + fireRefIs[14] + fireRefGu[14];
+  Y_total[14].innerText = Totalyr[14];tot_year(); } function yr15(){
+  Totalyr[15] = fireRefBf[15] + fireRefIf[15] + fireRefIs[15] + fireRefGu[15];
+  Y_total[15].innerText = Totalyr[15];tot_year(); } function yr16(){
+  Totalyr[16] = fireRefBf[16] + fireRefIf[16] + fireRefIs[16] + fireRefGu[16];
+  Y_total[16].innerText = Totalyr[16];tot_year(); } function yr17(){
+  Totalyr[17] = fireRefBf[17] + fireRefIf[17] + fireRefIs[17] + fireRefGu[17];
+  Y_total[17].innerText = Totalyr[17];tot_year(); }
+
+function totalll(){
+  total = 0;
+  for (var i = 1; i <= 17; i++) {
+    total = total + Totalr[i];
+    }
+to.innerText = total;
+
+}
+var toB,toG,toP,toY,toW,toI,toS,toGu;
+function tot_year(){
+  toB = 0;
+  toG = 0;
+  toP = 0;
+  toY = 0;
+  toW = 0;
+  toI = 0;
+  toS = 0;
+  toGu = 0;
+  total = 0;
+  totalFG = 0;
+  for (var i = 1; i <=17 ; i++) {
+    toB = toB + fireRefBf[i];
+    toG = toG + fireRefG[i];
+    toP = toP + fireRefP[i];
+    toY = toY + fireRefY[i];
+    toW = toW + fireRefW[i];
+    toI = toI + fireRefIf[i];
+    toS = toS + fireRefIs[i];
+    toGu = toGu + fireRefGu[i];
+
+    total = total + Totalyr[i];
+    totalFG = totalFG + Totalr[i]
+
+  }
+
+  var s = toB + toG + toP + toY;
+  Yto.innerText = total;
+  HtmlG.innerText = toG;
+  HtmlP.innerText = toP;
+  HtmlY.innerText = toY;
+  HtmlW.innerText = toW;
+  HtmlBF.innerText = toB;
+  HtmlIF.innerText = toI;
+  HtmlIS.innerText = toS;
+  HtmlGu.innerText = toGu;
+  to.innerText = totalFG;
+
+
+
+}
+
+function click() {
+
+
+}
+

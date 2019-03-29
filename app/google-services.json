@@ -1,0 +1,138 @@
+{
+  "project_info": {
+    "project_number": "42826794562",
+    "firebase_url": "https://folk-8ddd8.firebaseio.com",
+    "project_id": "folk-8ddd8",
+    "storage_bucket": "folk-8ddd8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42826794562:android:40001d6f444c14e8",
+        "android_client_info": {
+          "package_name": "com.example.androidbtcontrol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42826794562-21mdrug4me2c5jkm17e4evsdh5mfpgvr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANgJ5proGVnoimGjETeOzHv8IbDYPG41c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42826794562:android:eb92772181103f47",
+        "android_client_info": {
+          "package_name": "in.folknet.eventreg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42826794562-f5c5u3d9iuiprtpbt924pmuhrbqf9vaj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.folknet.eventreg",
+            "certificate_hash": "56f34f90a9cbc66da8bdea8a9d27054b51de8ad5"
+          }
+        },
+        {
+          "client_id": "42826794562-21mdrug4me2c5jkm17e4evsdh5mfpgvr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANgJ5proGVnoimGjETeOzHv8IbDYPG41c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "42826794562-21mdrug4me2c5jkm17e4evsdh5mfpgvr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42826794562:android:3623eddb07266510",
+        "android_client_info": {
+          "package_name": "in.folknet.folkbloreattendance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42826794562-uh18ttj982c5i0dq8hl84aegvbm7s9mm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.folknet.folkbloreattendance",
+            "certificate_hash": "b4225986b41ab0ad09bef52b43baa8a99cef619d"
+          }
+        },
+        {
+          "client_id": "42826794562-i8nc0mgpv428onk0ckb88l2l1no7fsk1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.folknet.folkbloreattendance",
+            "certificate_hash": "a69e73f5794239d90bbf7114c7b6d222c5d58267"
+          }
+        },
+        {
+          "client_id": "42826794562-21mdrug4me2c5jkm17e4evsdh5mfpgvr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANgJ5proGVnoimGjETeOzHv8IbDYPG41c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "42826794562-21mdrug4me2c5jkm17e4evsdh5mfpgvr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
